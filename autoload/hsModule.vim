@@ -33,7 +33,7 @@ endfunction
 function! hsModule#MkModuleHeader()
   let name=s:ModuleName()
   if !empty(name)
-    return "module " . name . "\n     () where\n"
+    return "module " . name . "\n  () where\n"
   else
     return ''
   endif
